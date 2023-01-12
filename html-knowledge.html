@@ -1,0 +1,318 @@
+<!--html-boilerplate-->
+
+<!--tells the browser that this document was made in HTML version 5. info: https://www.w3schools.com/tags/tag_doctype.asp-->
+<!DOCTYPE html>
+
+<!--  opening tag of the root of the document. Everything belongs in between the opening and closing tag.
+      Lang determines the screen language (e.g. screen readers can interpret how to pronounce words judging by the content.) -->
+<html lang="en">
+
+<!--  In the head important information about the website is stored that won't be displayed to the user.
+      It includes information for the browser to display the website correctly. Website content DOESN'T belong here-->
+<head>
+
+  <!--  This tag sets the character set that should be used by the browser to display the website (e.g. UTF-8).
+        Certain charsets can display special symbols (like emojis etc.), while others can't-->
+  <meta charset="UTF-8">
+
+  <!--  The name that should be displayed as the name of the browser tab-->
+  <title>HTML-Knowledge</title>
+</head>
+
+<!--  All the content of the website belongs between the opening and closing tag-->
+<body style="background-color: whitesmoke">
+<header style="text-align:center;"><h1 style="color: mediumpurple"><u>Christian's HTML-Knowledge</u></h1></header>
+
+<p style="text-align:center;">This document contains all the information I gathered about HTML-tags. Please note that
+  most of this code is obsolete and should be handled with CSS instead. It just shows the way you would handle things
+  using pure HTML, just like in the 90s.
+
+<hr>
+
+<!--text-fields (main-topic) -->
+<h2 style="text-align:center; color: mediumpurple"><u>Text Fields</u></h2>
+<hr>
+<div>
+
+  <!--headings-->
+  <h3 style="text-align:center;">Headings</h3>
+  <hr>
+  <div>
+
+    <h1 style="color:darkorange;"> This is a level 1 heading using &lth1&gt</h1>
+    <h2 style="color:darkorange;"> This is a level 2 heading using &lth2&gt</h2>
+    <h3 style="color:darkorange;"> This is a level 3 heading using &lth3&gt</h3>
+    <h4 style="color:darkorange;"> This is a level 4 heading using &lth4&gt</h4>
+    <h5 style="color:darkorange;"> This is a level 5 heading using &lth5&gt</h5>
+    <h6 style="color:darkorange;"> This is a level 6 heading using &lth6&gt</h6>
+
+    Heading best-practices: <br>
+    - do not use heading elements to resize text. <br/>
+    - do not skip heading levels: always start by h1 followed by h2 and so on. <br/>
+    - avoid using multiple h1 headings per page
+
+    <br/><br/> <a href="https://devdocs.io/html/element/heading_elements"> (Devdocs Documentation Link) </a>
+    <hr>
+
+  </div>
+
+  <!--lists (sub-topic-->
+  <h3 style="text-align:center;">Lists</h3>
+  <hr>
+  <div>
+
+    <!--ul-tag-->
+    <ul style="color: darkorange">
+      <li>&ltli&gt frames a list element</li>
+      <li>&ltul&gt frames all list elements to build an unordered list</li>
+    </ul>
+    Unordered lists is a grouping collection of items that do not have a numerical ordering.
+    <br/><br/> <a href="https://devdocs.io/html/element/ul"> (Devdocs Documentation Link) </a>
+    <hr>
+
+    <!--ol-tag-->
+    <ol style="color: darkorange">
+      <li>&ltli&gt frames a list element</li>
+      <li>&ltol&gt frames all list elements to build an ordered list</li>
+    </ol>
+    Ordered lists is a grouping collection of items that have a numerical ordering.
+    <br/><br/> <a href="https://devdocs.io/html/element/ol"> (Devdocs Documentation Link) </a>
+    <hr>
+
+  </div>
+
+  <!--tables (sub-topic)-->
+  <h3 style="text-align:center;">Tables</h3>
+  <hr>
+  <div>
+    <table border="0" cellspacing="30">
+
+      <thead>
+      <tr>
+        <th align="left">Tag</th>
+        <th align="left">Description</th>
+        <th align="left">Link</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td>&lt table &gt</td>
+        <td>Creates a new table. All data belongs belongs between the opening and closing tag.</td>
+        <td><a href="https://devdocs.io/html/element/table">Devdocs Documentation Link</a></td>
+      </tr>
+      <tr>
+        <td>&lt thead &gt</td>
+        <td>Container for table heading data to style parts of the table differently.</td>
+        <td><a href="https://devdocs.io/html/element/thead">Devdocs Documentation Link</a></td>
+      </tr>
+      <tr>
+        <td>&lt tbody &gt</td>
+        <td>Container for table body data to style parts of the table differently.</td>
+        <td><a href="https://devdocs.io/html/element/tbody">Devdocs Documentation Link</a></td>
+      </tr>
+      <tr>
+        <td>&lt tfoot &gt</td>
+        <td>Container for table foot data to style parts of the table differently.</td>
+        <td><a href="https://devdocs.io/html/element/tfoot">Devdocs Documentation Link</a></td>
+      </tr>
+      <tr>
+        <td>&lt tr &gt</td>
+        <td>Used to create a new row of cells => It frames the &lt td &gt elements of this row</td>
+        <td><a href="https://devdocs.io/html/element/tr">Devdocs Documentation Link</a></td>
+      </tr>
+      <tr>
+        <td>&lt td &gt</td>
+        <td>Used to create a new cell. It frames the text you are reading right now in this cell.</td>
+        <td><a href="https://devdocs.io/html/element/tr">Devdocs Documentation Link</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <table cellspacing="40">
+      <td><img src="https://reviewingpokemon.files.wordpress.com/2014/06/007squirtle-e1401744439689.png"></img>
+      <td>
+      <td>You can also use tables to display different things next to each other.</td>
+      <td>
+        <ul>
+          <li>Squirtle is a water pokémon 💧💧</li>
+          <li>Squirtle resembles a light blue turtle 🐢</li>
+        </ul>
+      </td>
+      <td><img
+        src="https://archives.bulbagarden.net/media/upload/archive/e/ea/20210101152537%21May_Squirtle_Withdraw.png">
+      </td>
+
+
+    </table>
+
+
+    <hr>
+  </div>
+
+  <!--forms (sub-topic)-->
+  <h3 style="text-align:center;">Forms</h3>
+  <hr>
+  <div>
+    <form action="html-knowledge.html"></form>
+
+    <label>Text Field:</label>
+    <input type="text" name="" value=""> <br/><br/>
+
+    <label>Message Field:</label>
+    <textarea name="message-field" rows=10" cols="30"></textarea> <br/><br/>
+
+    <label>Color Field: </label>
+    <input type="color" name="" value=""> <br/><br/>
+
+    <label>Checkbox: </label>
+    <input type="checkbox" name="" value=""> <br/><br/>
+
+    <label>Password: </label>
+    <input type="password" name="" value=""> <br/><br/>
+
+    <label>Date:</label>
+    <input type="date" name="" value=""> <br/><br/>
+
+    <input type="submit" name=""> <br/><br/><br/><br/>
+    Forms are used to get user input. There are a bunch of different tags related to this topic. To find out more
+    read the documentation.
+    <br/><br/> <a href="https://devdocs.io/html/element/form"> (Devdocs Documentation Link) </a>
+    <br/><br/> <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms"> (Mozilla Forms Guide) </a>
+    <br/><br/> <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types"> (Mozilla Forms Input
+    Types) </a>
+
+
+    <hr>
+  </div>
+</div>
+
+<!--text-manipulation (main-topic))-->
+<h2 style="text-align:center; color: mediumpurple"><u>Text manipulation</u></h2>
+<hr>
+<div>
+
+  <!--bold-text (sub-topic)-->
+  <h3 style="text-align:center;">Bold Text</h3>
+  <hr>
+  <div>
+
+    <!--b-tag-->
+    <b style="color:darkorange;">This text is surrounded by &ltb&gt </b> <br/><br/>
+    It increases the font thickness to make it more visible.
+    However, it does not give the browser information about the greater importance of this text
+    <br/><br/> <a href="https://devdocs.io/html/element/b"> (Devdocs Documentation Link) </a>
+    <hr>
+
+    <!--strong-tag-->
+    <strong style="color:darkorange;">This is text is surrounded by &ltstrong&gt</strong> <br/><br/>
+    This tag gives the text a certain importance and should be preferred over &ltb&gt
+    <br/><br/> <a href="https://devdocs.io/html/element/strong"> (Devdocs Documentation Link) </a>
+    <hr>
+
+  </div>
+
+  <!-- italicized-text (sub-topic)-->
+  <h3 style="text-align:center;">Italicized Text</h3>
+  <hr>
+  <div>
+
+    <!-- i-tag -->
+    <i style="color:darkorange;">This text is italicized by &lti&gt</i> <br/><br/>
+    This tag represents text that is set off from the normal prose, such a foreign word, fictional character thoughts,
+    or when the text refers to the definition of a word instead of representing its semantic meaning.
+    <br/><br/>
+    <b>Example:</b><br/>
+    "The <i>Queen Mary</i> sailed last night".
+    Here, there is no added emphasis or importance on the word "Queen Mary". It is merely indicated that the object in
+    question is not a queen named Mary, but a ship named Queen Mary.
+    <br/><br/> <a href="https://devdocs.io/html/element/i"> (Devdocs Documentation Link) </a>
+    <hr>
+
+    <!-- em-tag -->
+    <em style="color:darkorange;">This text is italicized by &ltem&gt</em> <br/><br/>
+    This tag represents stress emphasis of its contents and should be
+    used instead of &lti&gttag
+    <br/><br/> <a href="https://devdocs.io/html/element/em"> (Devdocs Documentation Link) </a>
+    <hr>
+
+    <!-- cite-tag -->
+    <cite style="color:darkorange;">This text is italicized by &ltcite&gt </cite><br/><br/>
+    The title of a work, such as the name of a book or movie, should use this tag.
+    <br/><br/> <a href="https://devdocs.io/html/element/cite"> (Devdocs Documentation Link) </a>
+    <hr>
+
+  </div>
+
+</div>
+
+<!--site-formatting (main-topic)-->
+<h2 style="text-align:center; color: mediumpurple"><u>Site Formatting</u></h2>
+<hr>
+<div>
+  <!--br-tag-->
+  <span style="color:darkorange;">&ltbr&gt</span> is used to make line breaks in your text or between other elements.
+  It is a self-closing tag, which means the tag doesn't need to be closed with a &lt/br&gt at the end.
+  It closes automatically.
+  <br/><br/> <a href="https://devdocs.io/html/element/br"> (Devdocs Documentation Link) </a>
+  <hr>
+
+  <!-- hr-tag-->
+  <span style="color:darkorange;">&lthr&gt</span> is used to make horizontal lines between other elements.
+  It is a self-closing tag, which means the tag doesn't need to be closed with a &lt/hr&gt at the end.
+  It closes automatically.
+  <br/><br/> <a href="https://devdocs.io/html/element/hr"> (Devdocs Documentation Link) </a>
+  <hr>
+
+</div>
+
+<!-- containers (main-topic) -->
+<h2 style="text-align:center; color: mediumpurple"><u>Containers</u></h2>
+<hr>
+<div>
+
+  <!--img-tag-->
+  <p><span style="color:darkorange;">&ltimg&gt</span> is used to add images to your page like the one below. You can use
+    the url
+    to embed pictures not saved locally, or use the save location as the address</p>
+  <img src="https://avatarfiles.alphacoders.com/893/thumb-89303.gif" alt="image failed to load">
+  <br/><br/> <a href="https://devdocs.io/html/element/img"> (Devdocs Documentation Link) </a>
+
+  <hr>
+  <!--p-tag-->
+  <span style="color:darkorange;">&ltp&gt</span> is used for structural grouping of related content, such as text,
+  images or form fields
+  <br/><br/> <a href="https://devdocs.io/html/element/p"> (Devdocs Documentation Link) </a>
+  <hr>
+
+  <!--span-tag-->
+  <span style="color:darkorange;">&ltspan&gt</span> is a generic <em>line</em> container used to group content(code) for
+  easier styling and code readability.
+  <br/><br/> <a href="https://devdocs.io/html/element/span"> (Devdocs Documentation Link) </a>
+  <hr>
+
+  <!--div-tag-->
+  <span style="color:darkorange;">&ltdiv&gt</span> is a generic container used to group content(code) for easier
+  styling and code readability
+  <br/><br/> <a href="https://devdocs.io/html/element/div"> (Devdocs Documentation Link) </a>
+  <hr>
+
+</div>
+
+<!-- hypertext features (main-topic) -->
+<h2 style="text-align:center; color: mediumpurple"><u>Hypertext Features</u></h2>
+<hr>
+<div>
+
+  <!--a-tag-->
+  <span style="color:darkorange;">&lta&gt</span> creates a hyperlink to web pages, files, email addresses, locations
+  in the same page or anything else a URL can address. Just like the Devdocs documentation link below.
+  <br/><br/> <a href="https://devdocs.io/html/element/a"> (Devdocs Documentation Link) </a>
+  <hr>
+
+</div>
+
+</body>
+</html>
